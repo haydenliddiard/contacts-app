@@ -1,0 +1,40 @@
+body
+  font-size: 16px
+.main-form
+  display: flex
+  flex-direction: column
+  width: 100%
+
+input
+  padding: .5em
+
+.peoplemation-enter
+  transform: translateX(-100%)
+  transition: .5s
+  opacity: 25%
+
+  &.peoplemation-enter-active
+    transform: translateX(0)
+    opacity: 100%
+    
+.peoplemation-exit
+  transform: translateX(0)
+  transition: .5s
+  &.peoplemation-exit-active
+    transform: translateX(100%)
+
+
+/*
+.formation-enter
+  transform: translateY(-150%)
+  transition: 5s
+  &.formation-enter
+    transform: translateY(0)
+    opacity: 100%
+
+.formation-exit
+  transform: translateY(0)
+  transition: 1s
+  &.formation-exit-active
+    transform: translateY(-100%)
+    */

@@ -1,0 +1,361 @@
+//-------------------------Mixins---------------------------
+
+  $myColor: #00cad6;
+  $main-shadow: 0px 5px 8px #888;
+
+//--------------------------------scss imports-------------------
+
+  @import 'helpers';
+  @import 'btns';
+  
+
+  //-------------------------Default-------------------
+
+  body {
+    font-size: 16px;
+    background: #e8e8e8;
+    margin: 0;
+  }
+  #main{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+  }
+  input {
+    padding: 0.5em;
+  }
+
+  //--------------------------Session-------------------------
+  
+  .session-wrapper {
+    width: 100%;
+  }
+
+  .entry-header {
+    color: #fff;
+    background: $myColor;
+    display: inline-block;
+    padding: .5em 0 .5em 0;
+    margin-top: 0;
+    width: 100%;
+    border-bottom: 2px solid #000;
+  }
+
+  @include mq (32em) {
+  .nameList-cont {
+      width: 30em;
+    }
+  }
+
+  .form-cont {
+    background: #fff;
+    padding: 1em;
+    margin-top: 5em;
+    border-radius: 25px;
+    height: 15em;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    padding-bottom: 5em;
+    box-shadow: 0px 5px 8px #888;
+    & h2 {
+      font-family: verdana;
+      margin-bottom: 2em;
+    }
+    & h2 {
+      margin-bottom: 2em;
+      color: #fff;
+    }
+    & h2:before {
+      background: $myColor;
+      content: "";
+      height: 3.5em;
+      top: 0;
+      left: 0;
+      width: 100%;
+      border-radius: 25px 25px 0 0;
+      padding-bottom: 1em;
+      position: absolute;
+      z-index: -1;
+    }
+  }
+
+  .form-cont input {
+    margin-top: 8em;
+    background-color: transparent;
+    outline: 0;
+  }
+
+  .list-input {
+    border: none;
+    border-bottom: 1px solid #cbcbcb;
+  }
+
+  @include mq  (25.75em) {
+    .form-cont h2 {
+      margin-bottom: 3em;
+    }
+  }
+
+  @include mq  (32.5em) {
+    .form-cont {
+      margin-left: 5%;
+    }
+  }
+
+  @include mq  (40em) {
+    .form-cont {
+      margin-left: 20%;
+    }
+  }
+
+  //-----------------------App------------------------------
+
+  .app-container {
+    width: 100%;
+  }
+  
+  //---------------------------------Header--------------------------------------
+  .top {
+    width: 100%;
+    text-align: left;
+    border-bottom: 2px solid #353535;
+    background: $myColor;
+    color: #fff;
+    padding-top: 1em;
+    font-family: verdana;
+    & h1{
+      margin-top: 0;
+    }
+  }
+
+  .top {
+    text-align: center;
+  }
+  //---------------------------------Add Form--------------------------------------
+
+  .list-name {
+    background: #fff;
+    padding: 2em;
+    border-radius: 0 0 60px 60px;
+    box-shadow: $main-shadow;
+    display: inline-block;
+    width: 75%;
+    & h2 {
+    margin-top: 1em;
+    
+    }
+  }
+
+
+  @include mq (30em) {
+    .form {
+      width: 50%;
+      margin-left: 25%;
+    }
+  }
+
+  @include mq (58em) {
+    .form {
+      width: 45%;
+      margin-left: 25%;
+    }
+  }
+
+  .add-form {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .add-btn-con {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  //---------------------------------FormItem--------------------------------------
+
+  .default-image-cont {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .default-image {
+    display: inline-block;
+  }
+
+  .form-items input {
+    border: none;
+    border-bottom: 1px solid #cbcbcb;
+    outline: 0;
+    margin-top: 2em;
+  }
+  
+  //------------------------------ContactItems--------------------------------
+
+  .contact-list {
+    margin-top: 2em;
+  }
+
+  .person-details  {
+    padding: 0;
+    font-size: 1em;
+    margin-top: 2em;
+    flex-wrap: wrap;
+      & li {
+        list-style: none;
+        margin: 1em auto;
+        & li>li {
+          border-bottom: 1px solid #cbcbcb;
+          }  
+      }
+  }
+  
+  .contacts {
+    padding-left: 0;
+  }
+  
+  @include mq(37.5em){
+
+    .contacts {
+      position: relative;
+    }
+    
+  }
+
+  .name {
+    background-color: #1e1e1e;
+    padding: .25em;
+    padding-left: .25em;
+    color: #fff;
+    text-align: left;
+    & h2{
+      margin-left: 1em;
+      margin-right: 1em;
+      display: inline-block;
+    }
+    & button {
+      text-align: right;
+      background: transparent;
+      color: #fff;
+    }
+  }
+
+  .info-cont{
+    padding-left: 1em;
+  }
+
+  .info-item {
+    display: inline-block;
+    height: auto;
+    margin-left: 1em;
+  }
+
+   // ---------------------------Contactlist----------------------------------
+
+   .contact {
+    margin-top: .25em;
+    width: 91%;
+    background: #fff;
+    padding: 1em;
+    border-radius: 20px;
+    box-shadow: $main-shadow;
+    text-align: left;
+    position: relative;
+    & .contact-details {
+      display: inline-block;
+      padding-left: .5em;
+      padding-right: .5em;
+    }
+    & h3 {
+      margin-bottom: 0;
+      font-size: 1em;
+    }
+    & form {
+      
+    }
+  }
+  .list-img {
+    display: inline-block;
+    margin-right: 1em;
+  }
+  .contact-name {
+    display: inline-block;
+    top: 2em;
+    & h3 {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
+
+  @include mq(31em) {
+    .contact {
+      width: 70%;
+      margin-left: 12%;
+    }
+  }
+
+  @include mq(43.7em) {
+    .contact {
+      width: 70%;
+      margin-left: 14%;
+    }
+  }
+
+
+  // ---------------------------ContactEdit----------------------------------
+
+  .edit-contact {
+    margin-top: 3em;
+    margin-bottom: 2em;
+    width: 75%;
+    margin-left: 10%;
+    background: #fff;
+    padding: .5em;
+    padding-bottom: 2em;
+    border-radius: 20px;
+    box-shadow: $main-shadow;
+    & h3 {
+      margin-bottom: 0;
+    }
+  }
+
+  @include mq(31em) {
+    .edit-contact {
+      width: 70%;
+      margin-left: 12%;
+    }
+  }
+
+  @include mq(43.7em) {
+    .edit-contact {
+      width: 70%;
+      margin-left: 14%;
+    }
+  }
+
+  .contact-info-cont input {
+    border: none;
+    border-bottom: 1px solid #cbcbcb;
+    outline: 0;
+  }
+
+  //-------------------------------contact-list---------------------------------------
+
+  .contact-form {
+    width: 80%;
+  }
+
+  //-------------------------------Notfound---------------------------------------
+
+  .not-found {
+
+  }

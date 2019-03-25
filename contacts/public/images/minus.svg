@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;fill:#6CFF43;}
+	.st2{fill:#FFFFFF;}
+	.st3{display:none;fill:#FFFFFF;}
+</style>
+<g id="Layer_2" class="st0">
+	<rect x="0" class="st1" width="16" height="16"/>
+</g>
+<g id="Layer_1">
+	<path id="rounded_minus_1_" class="st2" d="M14.04,9.96H1.95c-0.94,0-1.7-0.76-1.7-1.7V7.73c0-0.94,0.76-1.7,1.7-1.7h12.09
+		c0.94,0,1.7,0.76,1.7,1.7v0.53C15.74,9.2,14.98,9.96,14.04,9.96z"/>
+	<path class="st3" d="M14.04,6.04H9.96V1.96c0-0.94-0.76-1.7-1.7-1.7H7.73c-0.94,0-1.7,0.76-1.7,1.7v4.08H1.95
+		c-0.94,0-1.7,0.76-1.7,1.7v0.53c0,0.94,0.76,1.7,1.7,1.7h4.08v4.08c0,0.94,0.76,1.7,1.7,1.7h0.53c0.94,0,1.7-0.76,1.7-1.7V9.96
+		h4.08c0.94,0,1.7-0.76,1.7-1.7V7.73C15.74,6.8,14.98,6.04,14.04,6.04z"/>
+	<path id="rounded_plus" class="st3" d="M12.87,6.94H8.99V3.05c0-0.36-0.29-0.65-0.65-0.65H7.66C7.3,2.4,7,2.69,7,3.05v3.88H3.12
+		c-0.36,0-0.65,0.29-0.65,0.65v0.68c0,0.36,0.29,0.65,0.65,0.65H7v3.88c0,0.36,0.29,0.65,0.65,0.65h0.68c0.36,0,0.65-0.29,0.65-0.65
+		V8.93h3.88c0.36,0,0.65-0.29,0.65-0.65V7.59C13.53,7.23,13.24,6.94,12.87,6.94z"/>
+</g>
+</svg>
